@@ -3,153 +3,166 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#070a07">
-  <meta name="description" content="LIMEN — a Backrooms-inspired liminal horror total conversion for Minecraft.">
-  <meta property="og:title" content="LIMEN — First Release">
-  <meta property="og:description" content="Backrooms-inspired liminal horror total conversion for Minecraft 1.21.1 NeoForge.">
+  <meta name="theme-color" content="#080a08">
+  <meta name="description" content="LIMEN — a liminal horror total conversion for Minecraft 1.21.1 NeoForge.">
+  <meta property="og:title" content="Limen">
+  <meta property="og:description" content="LIMEN for Minecraft 1.21.1 NeoForge. Floor 1: Poolrooms is available in beta.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og.webp">
+  <meta property="og:image" content="assets/og-poolrooms.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>LIMEN</title>
+  <title>Limen</title>
 </head>
 <body>
-  <div class="phosphor" aria-hidden="true"></div>
-  <div class="scan" aria-hidden="true"></div>
-
-  <header class="rail">
-    <a class="rail-brand" href="#top">LIMEN</a>
-    <div class="rail-meta">RECORD C-01 / FIRST RELEASE</div>
+  <header class="topbar">
+    <a class="brand" href="#top">LIMEN</a>
     <nav aria-label="Site navigation">
-      <a href="#record">Record</a>
-      <a href="#frames">Frames</a>
-      <a href="#notes">Notes</a>
-      <a href="#release">Release</a>
+      <a href="#about">ABOUT</a>
+      <a href="#frames">MEDIA</a>
+      <a href="#systems">SYSTEMS</a>
+      <a href="#download">DOWNLOAD</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-image" aria-hidden="true"></div>
-      <div class="hero-shade" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/poolrooms-2.webp" aria-hidden="true">
+        <source src="assets/level1_poolrooms_loop.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-      <div class="hero-topline">
-        <span>reset300 labs</span>
-        <span>MC 1.21.1 / NEOFORGE</span>
+      <div class="hero-content">
+        <p class="eyebrow">UPDATE 1.1 / POOLROOMS BETA</p>
+        <h1>LIMEN</h1>
+        <p class="hero-text">A liminal horror total conversion for Minecraft. Explore disconnected spaces, restore broken systems and descend deeper.</p>
+
+        <div class="hero-actions">
+          <a class="game-button primary js-modrinth" href="#"><span>MODRINTH</span><small>DOWNLOAD</small></a>
+          <a class="game-button js-curseforge" href="#"><span>CURSEFORGE</span><small>DOWNLOAD</small></a>
+          <a class="game-button js-discord" href="#"><span>DISCORD</span><small>ISSUES / DEV</small></a>
+        </div>
       </div>
 
-      <div class="hero-copy">
-        <div class="overline">FIELD LINK / ACTIVE</div>
-        <h1 id="hero-title">LIMEN</h1>
-        <p>A Backrooms-inspired liminal horror total conversion for Minecraft.</p>
-      </div>
-
-      <div class="hero-actions" aria-label="Project links">
-        <a class="terminal-link js-modrinth" href="#"><span>01</span> MODRINTH</a>
-        <a class="terminal-link js-curseforge is-hidden" href="#"><span>02</span> CURSEFORGE</a>
-        <a class="terminal-link js-discord" href="#"><span>03</span> DISCORD</a>
-      </div>
-
-      <div class="hero-status">
-        <span>FLOOR <b>0</b></span>
-        <span>MODE <b>SINGLE / CO-OP β</b></span>
-        <span>STATUS <b>RELEASE</b></span>
+      <div class="hero-foot">
+        <span>MINECRAFT 1.21.1</span>
+        <span>NEOFORGE</span>
+        <span>JAVA 21</span>
+        <span>FLOOR 1 / BETA</span>
       </div>
     </section>
 
-    <section class="record block" id="record">
-      <div class="index">01 / FIELD RECORD</div>
-      <div class="record-copy">
-        <p class="record-lead">LIMEN replaces the normal Minecraft loop with its own world generation, progression, interface and interaction systems.</p>
-        <p>The First Release contains <strong>Floor 0</strong>: procedural liminal spaces, environmental puzzles, limited equipment and a single-player campaign. Co-op is included as a beta.</p>
+    <section class="about section" id="about">
+      <div class="section-number">01</div>
+      <div class="about-main">
+        <p class="section-label">CURRENT BUILD</p>
+        <h2>POOLROOMS<br>ARE OPEN.</h2>
+        <p class="lead">Update 1.1 adds Floor 1: Poolrooms — flooded spaces, darker industrial sectors and equipment-based progression.</p>
+        <p>Floor 0 remains the entry/tutorial floor. Floor 1 is currently public beta content, so generation, progression and multiplayer issues may still appear.</p>
       </div>
-      <dl class="record-meta">
-        <div><dt>BUILD</dt><dd>First Release</dd></div>
-        <div><dt>PLATFORM</dt><dd>Minecraft 1.21.1</dd></div>
-        <div><dt>LOADER</dt><dd>NeoForge</dd></div>
-        <div><dt>ENVIRONMENT</dt><dd>Client</dd></div>
+      <dl class="specs">
+        <div><dt>VERSION</dt><dd>1.1</dd></div>
+        <div><dt>CONTENT</dt><dd>FLOOR 0 + FLOOR 1 β</dd></div>
+        <div><dt>LOADER</dt><dd>NEOFORGE</dd></div>
+        <div><dt>MODE</dt><dd>SP / CO-OP</dd></div>
       </dl>
     </section>
 
-    <section class="frames block" id="frames">
-      <div class="section-head">
-        <div class="index">02 / RECOVERED FRAMES</div>
-        <p>Floor 0 / in-game capture</p>
+    <section class="section" id="frames">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">02 / MEDIA</p>
+          <h2>POOLROOMS</h2>
+        </div>
+        <p>CLICK A FRAME TO OPEN</p>
       </div>
 
-      <div class="frame-grid">
-        <button class="frame frame-a" data-image="assets/shot-4.webp" aria-label="Open Yellow Rooms image">
-          <img src="assets/shot-4.webp" alt="Yellow Rooms in LIMEN">
-          <span><b>FRAME 01</b> / YELLOW ROOMS</span>
+      <div class="gallery">
+        <button class="shot shot-main" data-image="assets/poolrooms-1.webp" aria-label="Open Poolrooms screenshot 1">
+          <img src="assets/poolrooms-1.webp" alt="Dark Poolrooms access area in LIMEN">
+          <span>01 / DARK ACCESS</span>
         </button>
-        <button class="frame frame-b" data-image="assets/shot-1.webp" aria-label="Open office image">
-          <img src="assets/shot-1.webp" alt="Office area in LIMEN">
-          <span><b>FRAME 02</b> / OFFICE</span>
+        <button class="shot" data-image="assets/poolrooms-2.webp" aria-label="Open Poolrooms screenshot 2">
+          <img src="assets/poolrooms-2.webp" alt="Bright tiled Poolrooms corridor in LIMEN">
+          <span>02 / TRANSIT</span>
         </button>
-        <button class="frame frame-c" data-image="assets/shot-2.webp" aria-label="Open Floor 0 image">
-          <img src="assets/shot-2.webp" alt="Large liminal space in LIMEN">
-          <span><b>FRAME 03</b> / FLOOR 0</span>
+        <button class="shot" data-image="assets/poolrooms-4.webp" aria-label="Open Poolrooms screenshot 3">
+          <img src="assets/poolrooms-4.webp" alt="Poolrooms window gallery in LIMEN">
+          <span>03 / WINDOW GALLERY</span>
         </button>
-        <button class="frame frame-d" data-image="assets/shot-3.webp" aria-label="Open isolated light image">
-          <img src="assets/shot-3.webp" alt="Isolated light in LIMEN">
-          <span><b>FRAME 04</b> / FIELD LIGHT</span>
+        <button class="shot shot-wide" data-image="assets/poolrooms-3.webp" aria-label="Open Poolrooms screenshot 4">
+          <img src="assets/poolrooms-3.webp" alt="Blackout Poolrooms corridor in LIMEN">
+          <span>04 / BLACKOUT</span>
         </button>
       </div>
     </section>
 
-    <section class="notes block" id="notes">
-      <div class="index">03 / SYSTEM NOTES</div>
+    <section class="section systems" id="systems">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">03 / SYSTEMS</p>
+          <h2>WHAT CHANGED</h2>
+        </div>
+      </div>
 
-      <div class="note-row">
-        <div class="note-code">TAPE INDEX</div>
-        <p>Stable points can be recorded and used to rewind a run after death.</p>
-        <div class="note-state">ACTIVE</div>
-      </div>
-      <div class="note-row">
-        <div class="note-code">FIELD MAP</div>
-        <p>Fog-of-war mapping without a live player marker.</p>
-        <div class="note-state">ACTIVE</div>
-      </div>
-      <div class="note-row">
-        <div class="note-code">CO-OP LINK</div>
-        <p>2–4 players through LAN or Steam. Less tested than single-player.</p>
-        <div class="note-state beta">BETA</div>
+      <div class="system-list">
+        <article>
+          <h3>PRESSURE RIG</h3>
+          <p>Equipment for the deeper flooded parts of Floor 1, with its own movement and air behaviour.</p>
+          <span>BETA</span>
+        </article>
+        <article>
+          <h3>PROCEDURAL FLOOR</h3>
+          <p>Upper, Deep and Lower sectors connect into a generated route with required progression spaces.</p>
+          <span>ACTIVE</span>
+        </article>
+        <article>
+          <h3>FIELD MAP</h3>
+          <p>Fog-of-war navigation for spaces already explored during the current run.</p>
+          <span>ACTIVE</span>
+        </article>
+        <article>
+          <h3>CO-OP</h3>
+          <p>Two to four players can descend together. Multiplayer is still less tested than single-player.</p>
+          <span>BETA</span>
+        </article>
       </div>
     </section>
 
-    <section class="trailer block is-hidden" id="trailer">
-      <div class="section-head">
-        <div class="index">04 / VIDEO RECORD</div>
-        <p>Recovered footage</p>
+    <section class="trailer section is-hidden" id="trailer">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">04 / VIDEO</p>
+          <h2>FOOTAGE</h2>
+        </div>
       </div>
       <div class="video-shell"><iframe class="js-trailer" title="LIMEN trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </section>
 
-    <section class="release block" id="release">
-      <div class="release-static" aria-hidden="true"><canvas id="staticCanvas"></canvas></div>
-      <div class="release-copy">
-        <div class="index">04 / PUBLIC RELEASE</div>
-        <h2>FIRST RELEASE</h2>
-        <p>Minecraft 1.21.1 / NeoForge / Java 21</p>
-        <p class="quiet">LIMEN is a total conversion. A separate instance without other gameplay-changing mods is recommended.</p>
-        <div class="release-links">
-          <a class="terminal-link js-modrinth" href="#"><span>↓</span> MODRINTH</a>
-          <a class="terminal-link js-curseforge is-hidden" href="#"><span>↓</span> CURSEFORGE</a>
-          <a class="terminal-link js-discord" href="#"><span>↗</span> DISCORD</a>
+    <section class="download section" id="download">
+      <div class="download-version" aria-hidden="true">1.1</div>
+      <div class="download-copy">
+        <p class="section-label">PUBLIC BUILD</p>
+        <h2>DOWNLOAD<br>LIMEN</h2>
+        <p>Floor 1: Poolrooms is available as beta content for Minecraft 1.21.1 / NeoForge / Java 21.</p>
+        <div class="download-actions">
+          <a class="game-button primary js-modrinth" href="#"><span>MODRINTH</span><small>GET LIMEN</small></a>
+          <a class="game-button js-curseforge" href="#"><span>CURSEFORGE</span><small>GET LIMEN</small></a>
+          <a class="game-button js-discord" href="#"><span>DISCORD</span><small>REPORT ISSUES</small></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <span>reset300 labs / LIMEN</span>
+    <span>RESET300 LABS / LIMEN</span>
     <span>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
   </footer>
 
   <dialog id="lightbox">
-    <button class="close" aria-label="Close image">CLOSE / ESC</button>
+    <button class="close" aria-label="Close image">CLOSE</button>
     <img alt="Expanded LIMEN screenshot">
   </dialog>
 
